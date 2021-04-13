@@ -100,8 +100,6 @@ class MyApp:
 
 
     def attach_file(self):
-        if Debug:
-            print(self.searched_files)
 
         regex = r'^.*' + self.entry_regex_target.get()
         pattern = re.compile(regex)
